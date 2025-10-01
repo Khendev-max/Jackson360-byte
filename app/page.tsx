@@ -23,10 +23,13 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#7a6f6f] via-[#6b7a7f] to-[#5a8a8f] flex flex-col">
-      <div className="absolute top-0 left-0 w-20 h-20 md:w-24 md:h-24 bg-[#E20074] flex items-center justify-center">
-        <span className="text-white text-4xl md:text-5xl font-bold">T</span>
-      </div>
+    <div className="absolute top-0 left-0 w-24 h-24 bg-[#E20074] flex items-center justify-center">
+  <img
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAM4AAACUCAMAAADs1OZnAAAAkFBMVEXiAH7////hAHniC4HkH4fhAHX50OXiAHzpZp/86/P97/X9//vnV5vhAHfwudH65u/63+r20ODfAG/mMo31xdvlL4joPpD4zd/mT5D21ePnRpL//P/0v9jiGHzwpcTlJITiAGvqc6fwmsHtjrXqgq/ys9HhLIDy1Oj63u/jOYfoaKjwgLHpRInzrM3oYJ/w2uiFPM5fAAAEQUlEQVR4nO3dfVeqMBwH8LFJExJBU0MR8Qm7XdPe/7u7YHlLHTAGe9Dz+/7TOTnmPk0GwliIoAdKBwHH3ADH5ADH5ADH5ADH5AhxPFtJPDWceP6kIoM0VsNxLCXxFXF8NZwAOMABDnAM4kROEATTacB+MX8lCJzoLjjBfLHZHmeTcUK7LquAc4yT8WR23G4W8/KadHJOf2x/cwwT7HkYU4pw131mcXrZixTjrFASdtfFx2TNveOmM5tkjHOKOT91UWrPUmYnauY4h2RIL8rxcLJ3x8vkwOwinZx+aNOrcjycLBRRu9e3bovq40THBN+U4+SciiZdg3rnbZf9jW8qqsHJNh+/mcLp7zxy/UmryyF4NzeDk2YfNMKopg4n654bjx7OIMaI0Tc1OXn5+I9+zueOMjH1OZS+XwzYOjju0SuqoS4HEbqKrJ9TOfWcyFoUtU2AgwhO9faOQ3BhBfU5yOv8OuHRwPk7LC4nwEH2XifHX5ZsLsJBQ1cXJ2vrvmhUyyPEwRvrfPqmvHf8D1rSNCEOCt3z2KaccygtJ8LJTq//D26qOdHWLisn1jveRlfvBLOSPUeUQ8NAE2dUfstCjIPQQBNnUfpZE+XYqR5O1C1vlyDH20d6OJPSXUeUg3t6OG7FPiDIodTVwnGW5eUEOWSph/NUcvqZR3RkWwZaOH1ZnJEWzkES5zxSq+aUH3aE9x3VnO8LFBVHUeHeGX5zVN2IdyVzDko5aDw55aWimCiHdr7qn9RvmRCH5vebyr6HfkWUkx9J81QWu43MGVPiHOEAhzvAaRrgcAc4TQMc7gCnaYCDzudU17m+4cvPKahPDYeOJy/MjIU4ZMyu7bo6WZx46visuGlHhJOkLrM651XztPCRCIeOB4xCeXTPNhTkvAIHOMABDnCAAxzgAAc4wAEOcIADHOAYxHmwKznz6YCV6aL+o3xZkkNBdX1F8wqGBbmaNsF7UddeMmtbVszCaI2D2Btd/7LZJXehdolecucpdTd3EPgCnKYBDneA0zTA4Q5wmgY43AFO0wCHO2zOs3N8KI57vxzGZ81yK54xaxKZHG/1UBx7w1wVK9oLLCnJGYkcYi9YGsta21TWm8rsHZqyOQd6hxyCOyM2Z9S5Qw7CvYLLi34oMpGQKxI5dM/WWNZe2tAmkRM/FXFGAhcE+SKP4x2LNJYVyuoeaRwclyzF6MeenN1HFocm1+t5XaSf3A2HEJSvTla+TmYae4i5bFizyOgd7Nlh5dKhnzMPt78HtcY5PUqI8zU0SbgqOH5eZr4KyWnNTZw/6dhOK1rjzE7prbbrlHuNWj9db1a9ry3baUY7HIo+vie+u5VLy14mOs9w/2ihGa31Dg3rKX55vn+2c+KjnXNWha3sPsBhBTgGc2hjzoMNBUZxCJ70G+a9lS/cLfUOIV7DcM5VqAj8wxqTAxyTAxyTAxyTAxyT82icf21jhjtsUphUAAAAAElFTkSuQmCC"
+    alt="Logo"
+    className="w-12 h-12 md:w-16 md:h-16 object-contain"
+  />
+</div>
 
       {/* Main Content */}
       <div className="flex-1 flex items-center justify-center p-4">
